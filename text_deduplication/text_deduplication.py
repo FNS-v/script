@@ -55,7 +55,7 @@ def save_str_to_txt(content, save_path):
         f.write(content)
 def do_work(file_dir_list):
     # ========== 请在这里修改你的文件路径 ==========
-    first_file = r"C:\Users\HP\Desktop\a\新建文本文档.txt"  # 待规则解析的txt
+    first_file = r"新建文本文档.txt"  # 待规则解析的txt
     second_file = file_dir_list[0]  # 待删除子串的txt
     output_file = file_dir_list[1]  # 输出保存的新txt
     # ============================================
@@ -69,4 +69,4 @@ def do_work(file_dir_list):
     save_str_to_txt(new_s, output_file)
     print("处理完成！已保存到", output_file)
 if __name__ == "__main__":
-    do_work()
+    pass
