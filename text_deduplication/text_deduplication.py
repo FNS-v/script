@@ -46,8 +46,8 @@ def remove_all_substr(origin_str, substr_list):
     new_str = origin_str
     for sub in substr_list:
         # 循环删除直到不存在该子串
-        while sub in new_str:
-            new_str = new_str.replace(sub, '')
+        # while sub in new_str:
+        new_str = new_str.replace(sub, '')
     return new_str
 def save_str_to_txt(content, save_path):
     """保存处理后的字符串到新txt文件"""
